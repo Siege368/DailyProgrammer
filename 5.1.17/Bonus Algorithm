@@ -1,0 +1,25 @@
+bool checksum(list)
+if list contains 1 element
+    if element is zero, return true
+    else return false
+else
+    int sum
+    for each element in list
+        sum += element
+        if sum > 0
+            break
+
+    if sum == 0
+        return true
+
+    for each element in list
+        newlist without element
+        if checksum(newlist)
+            return true
+
+return false
+
+
+
+    
+    
